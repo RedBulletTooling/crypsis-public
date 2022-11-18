@@ -1,0 +1,180 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:78511-214HLF J2
+U 1 1 602AF3B1
+P 6600 3150
+F 0 "J2" H 7228 2546 50  0000 L CNN
+F 1 "78511-214HLF" H 7228 2455 50  0000 L CNN
+F 2 "HDRV14W67P0X254_1X14_3556X241X1082P" H 7250 3250 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/78511-214HLF.pdf" H 7250 3150 50  0001 L CNN
+F 4 "Headers & Wire Housings 14P SR HEADER" H 7250 3050 50  0001 L CNN "Description"
+F 5 "10.82" H 7250 2950 50  0001 L CNN "Height"
+F 6 "649-78511-214HLF" H 7250 2850 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Amphenol-FCI/78511-214HLF?qs=O9nARPbX6JWEoSyJZYC8zw%3D%3D" H 7250 2750 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Amphenol" H 7250 2650 50  0001 L CNN "Manufacturer_Name"
+F 9 "78511-214HLF" H 7250 2550 50  0001 L CNN "Manufacturer_Part_Number"
+	1    6600 3150
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 3500 0    50   Input ~ 0
+VCC
+Text GLabel 4900 3500 2    50   Input ~ 0
+1.8v
+Text GLabel 4000 3600 0    50   Input ~ 0
+RESET
+Text GLabel 4900 3600 2    50   Input ~ 0
+SWDCLK
+Text GLabel 4000 3700 0    50   Input ~ 0
+SWDIO
+Text GLabel 4000 3800 0    50   Input ~ 0
+RX1
+Text GLabel 4900 3800 2    50   Input ~ 0
+TX1
+Text GLabel 4000 3900 0    50   Input ~ 0
+RX2
+Text GLabel 4900 3900 2    50   Input ~ 0
+TX2
+Text GLabel 4900 3700 2    50   Input ~ 0
+SWO
+$Comp
+L SamacSys_Parts:HTSW-107-14-L-D J1
+U 1 1 602ADB0C
+P 4000 3500
+F 0 "J1" H 4450 3765 50  0000 C CNN
+F 1 "HTSW-107-14-L-D" H 4450 3674 50  0000 C CNN
+F 2 "HDRV14W64P254_2X7_1778X502X1067P" H 4750 3600 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/HTSW-107-14-L-D.pdf" H 4750 3500 50  0001 L CNN
+F 4 "SAMTEC - HTSW-107-14-L-D - HEADER, 2.54MM, VERTICAL THT, 14WAY" H 4750 3400 50  0001 L CNN "Description"
+F 5 "10.67" H 4750 3300 50  0001 L CNN "Height"
+F 6 "200-HTSW10714LD" H 4750 3200 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Samtec/HTSW-107-14-L-D?qs=0lQeLiL1qyanW67y7Ts4kQ%3D%3D" H 4750 3100 50  0001 L CNN "Mouser Price/Stock"
+F 8 "SAMTEC" H 4750 3000 50  0001 L CNN "Manufacturer_Name"
+F 9 "HTSW-107-14-L-D" H 4750 2900 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4000 3500
+	1    0    0    -1  
+$EndComp
+Text Label 6600 4750 0    50   ~ 0
+MATCH_DEZE_DING_MET_SEGGER
+Text GLabel 6600 3150 0    50   Input ~ 0
+VCC
+Text GLabel 6600 3350 0    50   Input ~ 0
+RESET
+Text GLabel 6600 3450 0    50   Input ~ 0
+SWO
+Text GLabel 6600 3650 0    50   Input ~ 0
+SWDIO
+Text GLabel 6600 3550 0    50   Input ~ 0
+SWDCLK
+Text GLabel 6600 3750 0    50   Input ~ 0
+1.8v
+Text GLabel 6600 3850 0    50   Input ~ 0
+RX1
+Text GLabel 6600 3950 0    50   Input ~ 0
+TX1
+Text GLabel 6600 4150 0    50   Input ~ 0
+TX2
+Text GLabel 6600 4050 0    50   Input ~ 0
+RX2
+$Comp
+L power:GND #PWR?
+U 1 1 602C421E
+P 4900 4000
+F 0 "#PWR?" H 4900 3750 50  0001 C CNN
+F 1 "GND" V 4905 3872 50  0000 R CNN
+F 2 "" H 4900 4000 50  0001 C CNN
+F 3 "" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C4CD7
+P 4900 4100
+F 0 "#PWR?" H 4900 3850 50  0001 C CNN
+F 1 "GND" V 4905 3972 50  0000 R CNN
+F 2 "" H 4900 4100 50  0001 C CNN
+F 3 "" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C4E86
+P 4000 4000
+F 0 "#PWR?" H 4000 3750 50  0001 C CNN
+F 1 "GND" V 4005 3872 50  0000 R CNN
+F 2 "" H 4000 4000 50  0001 C CNN
+F 3 "" H 4000 4000 50  0001 C CNN
+	1    4000 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C4FBF
+P 4000 4100
+F 0 "#PWR?" H 4000 3850 50  0001 C CNN
+F 1 "GND" V 4005 3972 50  0000 R CNN
+F 2 "" H 4000 4100 50  0001 C CNN
+F 3 "" H 4000 4100 50  0001 C CNN
+	1    4000 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C5574
+P 6600 4250
+F 0 "#PWR?" H 6600 4000 50  0001 C CNN
+F 1 "GND" V 6605 4122 50  0000 R CNN
+F 2 "" H 6600 4250 50  0001 C CNN
+F 3 "" H 6600 4250 50  0001 C CNN
+	1    6600 4250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C5C81
+P 6600 4350
+F 0 "#PWR?" H 6600 4100 50  0001 C CNN
+F 1 "GND" V 6605 4222 50  0000 R CNN
+F 2 "" H 6600 4350 50  0001 C CNN
+F 3 "" H 6600 4350 50  0001 C CNN
+	1    6600 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C6456
+P 6600 4450
+F 0 "#PWR?" H 6600 4200 50  0001 C CNN
+F 1 "GND" V 6605 4322 50  0000 R CNN
+F 2 "" H 6600 4450 50  0001 C CNN
+F 3 "" H 6600 4450 50  0001 C CNN
+	1    6600 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 602C6F7E
+P 6600 3250
+F 0 "#PWR?" H 6600 3000 50  0001 C CNN
+F 1 "GND" V 6605 3122 50  0000 R CNN
+F 2 "" H 6600 3250 50  0001 C CNN
+F 3 "" H 6600 3250 50  0001 C CNN
+	1    6600 3250
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

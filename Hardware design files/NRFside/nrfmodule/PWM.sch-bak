@@ -1,0 +1,416 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L SamacSys_Parts:LP5912-5.0DRVR 5.0V1
+U 1 1 5F46A22A
+P 2150 2850
+F 0 "5.0V1" H 2650 3115 50  0000 C CNN
+F 1 "LP5912-5.0DRVR" H 2650 3024 50  0000 C CNN
+F 2 "SON65P200X200X80-7N" H 3000 2950 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp5912.pdf" H 3000 2850 50  0001 L CNN
+F 4 "LDO Voltage Regulators 500mA low-noise low-Iq low-dropout (LDO) linear regulator 6-WSON -40 to 125" H 3000 2750 50  0001 L CNN "Description"
+F 5 "0.8" H 3000 2650 50  0001 L CNN "Height"
+F 6 "595-LP5912-5.0DRVR" H 3000 2550 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/LP5912-50DRVR?qs=%252BEew9%252B0nqrBQWfuia6oGxQ%3D%3D" H 3000 2450 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 3000 2350 50  0001 L CNN "Manufacturer_Name"
+F 9 "LP5912-5.0DRVR" H 3000 2250 50  0001 L CNN "Manufacturer_Part_Number"
+	1    2150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GRM31CR60J227ME11L 220uF2
+U 1 1 5F46BF31
+P 900 3600
+F 0 "220uF2" H 1150 3865 50  0000 C CNN
+F 1 "GRM31CR60J227ME11L" H 1150 3774 50  0000 C CNN
+F 2 "CAPC3216X190N" H 1250 3650 50  0001 L CNN
+F 3 "https://www.murata.com/products/productdetail?partno=GRM31CR60J227ME11%23" H 1250 3550 50  0001 L CNN
+F 4 "MURATA - GRM31CR60J227ME11L - CAPACITOR, MLCC, X5R, 220UF, 6.3V, 1206" H 1250 3450 50  0001 L CNN "Description"
+F 5 "1.9" H 1250 3350 50  0001 L CNN "Height"
+F 6 "81-GRM31CR60J227ME1L" H 1250 3250 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR60J227ME11L?qs=qSv5qXjCIG0eiOVJsXqfJw%3D%3D" H 1250 3150 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 1250 3050 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM31CR60J227ME11L" H 1250 2950 50  0001 L CNN "Manufacturer_Part_Number"
+	1    900  3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GRM31CR60J227ME11L 220uF1
+U 1 1 5F46DD6A
+P 900 3150
+F 0 "220uF1" H 1150 3415 50  0000 C CNN
+F 1 "GRM31CR60J227ME11L" H 1150 3324 50  0000 C CNN
+F 2 "CAPC3216X190N" H 1250 3200 50  0001 L CNN
+F 3 "https://www.murata.com/products/productdetail?partno=GRM31CR60J227ME11%23" H 1250 3100 50  0001 L CNN
+F 4 "MURATA - GRM31CR60J227ME11L - CAPACITOR, MLCC, X5R, 220UF, 6.3V, 1206" H 1250 3000 50  0001 L CNN "Description"
+F 5 "1.9" H 1250 2900 50  0001 L CNN "Height"
+F 6 "81-GRM31CR60J227ME1L" H 1250 2800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Murata-Electronics/GRM31CR60J227ME11L?qs=qSv5qXjCIG0eiOVJsXqfJw%3D%3D" H 1250 2700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 1250 2600 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM31CR60J227ME11L" H 1250 2500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    900  3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GRM033C80J105ME05D 1uF1
+U 1 1 5F481D5B
+P 1300 5500
+F 0 "1uF1" H 1550 5765 50  0000 C CNN
+F 1 "GRM033C80J105ME05D" H 1550 5674 50  0000 C CNN
+F 2 "CAPC0603X33N" H 1650 5550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM033C80J105ME05D.pdf" H 1650 5450 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT" H 1650 5350 50  0001 L CNN "Description"
+F 5 "0.33" H 1650 5250 50  0001 L CNN "Height"
+F 6 "81-GRM033C80J105ME5D" H 1650 5150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM033C80J105ME5D" H 1650 5050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 1650 4950 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033C80J105ME05D" H 1650 4850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GRM033C80J105ME05D 1uF3
+U 1 1 5F4851A9
+P 3100 5500
+F 0 "1uF3" H 3350 5765 50  0000 C CNN
+F 1 "GRM033C80J105ME05D" H 3350 5674 50  0000 C CNN
+F 2 "CAPC0603X33N" H 3450 5550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM033C80J105ME05D.pdf" H 3450 5450 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT" H 3450 5350 50  0001 L CNN "Description"
+F 5 "0.33" H 3450 5250 50  0001 L CNN "Height"
+F 6 "81-GRM033C80J105ME5D" H 3450 5150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM033C80J105ME5D" H 3450 5050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 3450 4950 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033C80J105ME05D" H 3450 4850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3100 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GRM033C80J105ME05D 1uF2
+U 1 1 5F485F09
+P 1650 2700
+F 0 "1uF2" H 1900 2965 50  0000 C CNN
+F 1 "GRM033C80J105ME05D" H 1900 2874 50  0000 C CNN
+F 2 "CAPC0603X33N" H 2000 2750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM033C80J105ME05D.pdf" H 2000 2650 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT" H 2000 2550 50  0001 L CNN "Description"
+F 5 "0.33" H 2000 2450 50  0001 L CNN "Height"
+F 6 "81-GRM033C80J105ME5D" H 2000 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM033C80J105ME5D" H 2000 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 2000 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033C80J105ME05D" H 2000 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1650 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:GRM033C80J105ME05D 1uF4
+U 1 1 5F486659
+P 3150 2700
+F 0 "1uF4" H 3400 2965 50  0000 C CNN
+F 1 "GRM033C80J105ME05D" H 3400 2874 50  0000 C CNN
+F 2 "CAPC0603X33N" H 3500 2750 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/GRM033C80J105ME05D.pdf" H 3500 2650 50  0001 L CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT" H 3500 2550 50  0001 L CNN "Description"
+F 5 "0.33" H 3500 2450 50  0001 L CNN "Height"
+F 6 "81-GRM033C80J105ME5D" H 3500 2350 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/Refine.aspx?Keyword=81-GRM033C80J105ME5D" H 3500 2250 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Murata Electronics" H 3500 2150 50  0001 L CNN "Manufacturer_Name"
+F 9 "GRM033C80J105ME05D" H 3500 2050 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:4-103327-3 GND?
+U 1 1 5F4D2B2B
+P 1000 1450
+AR Path="/5F450D9F/5F4D2B2B" Ref="GND?"  Part="1" 
+AR Path="/5F451091/5F4D2B2B" Ref="GND1"  Part="1" 
+F 0 "GND1" H 1292 1715 50  0000 C CNN
+F 1 "4-103327-3" H 1292 1624 50  0000 C CNN
+F 2 "HDRV1W66P0X254_1X1_213X234X813P" H 1650 1550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/4-103327-3.pdf" H 1650 1450 50  0001 L CNN
+F 4 "Headers & Wire Housings 01 MODII HDR SRST B/A .100CL" H 1650 1350 50  0001 L CNN "Description"
+F 5 "8.128" H 1650 1250 50  0001 L CNN "Height"
+F 6 "571-4-103327-3" H 1650 1150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/4-103327-3?qs=A0DvvJjHse9xDwPYfNPp%2FQ%3D%3D" H 1650 1050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 1650 950 50  0001 L CNN "Manufacturer_Name"
+F 9 "4-103327-3" H 1650 850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L SamacSys_Parts:4-103327-3 5V+?
+U 1 1 5F4D2B37
+P 1000 1000
+AR Path="/5F450D9F/5F4D2B37" Ref="5V+?"  Part="1" 
+AR Path="/5F451091/5F4D2B37" Ref="5V+1"  Part="1" 
+F 0 "5V+1" H 1292 1265 50  0000 C CNN
+F 1 "4-103327-3" H 1292 1174 50  0000 C CNN
+F 2 "HDRV1W66P0X254_1X1_213X234X813P" H 1650 1100 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/1/4-103327-3.pdf" H 1650 1000 50  0001 L CNN
+F 4 "Headers & Wire Housings 01 MODII HDR SRST B/A .100CL" H 1650 900 50  0001 L CNN "Description"
+F 5 "8.128" H 1650 800 50  0001 L CNN "Height"
+F 6 "571-4-103327-3" H 1650 700 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/TE-Connectivity-AMP/4-103327-3?qs=A0DvvJjHse9xDwPYfNPp%2FQ%3D%3D" H 1650 600 50  0001 L CNN "Mouser Price/Stock"
+F 8 "TE Connectivity" H 1650 500 50  0001 L CNN "Manufacturer_Name"
+F 9 "4-103327-3" H 1650 400 50  0001 L CNN "Manufacturer_Part_Number"
+	1    1000 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F4CDE31
+P 1000 1450
+F 0 "#PWR0101" H 1000 1200 50  0001 C CNN
+F 1 "GND" H 1005 1277 50  0000 C CNN
+F 2 "" H 1000 1450 50  0001 C CNN
+F 3 "" H 1000 1450 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0102
+U 1 1 5F4CE3DB
+P 900 1000
+F 0 "#PWR0102" H 900 850 50  0001 C CNN
+F 1 "+5V" H 915 1173 50  0000 C CNN
+F 2 "" H 900 1000 50  0001 C CNN
+F 3 "" H 900 1000 50  0001 C CNN
+	1    900  1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1000 900  1000
+Wire Wire Line
+	3150 2700 3150 2850
+Wire Wire Line
+	2150 2850 2150 2700
+$Comp
+L power:GND #PWR0103
+U 1 1 5F4E0FFE
+P 3650 2700
+F 0 "#PWR0103" H 3650 2450 50  0001 C CNN
+F 1 "GND" V 3655 2572 50  0000 R CNN
+F 2 "" H 3650 2700 50  0001 C CNN
+F 3 "" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F4E1BE4
+P 1650 2700
+F 0 "#PWR0104" H 1650 2450 50  0001 C CNN
+F 1 "GND" V 1655 2572 50  0000 R CNN
+F 2 "" H 1650 2700 50  0001 C CNN
+F 3 "" H 1650 2700 50  0001 C CNN
+	1    1650 2700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 2850 1850 2850
+Connection ~ 2150 2850
+Wire Wire Line
+	3150 2850 3500 2850
+Connection ~ 3150 2850
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F4E2462
+P 3500 2850
+F 0 "#PWR0105" H 3500 2700 50  0001 C CNN
+F 1 "+5V" V 3515 2978 50  0000 L CNN
+F 2 "" H 3500 2850 50  0001 C CNN
+F 3 "" H 3500 2850 50  0001 C CNN
+	1    3500 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0106
+U 1 1 5F4E2F6E
+P 1800 2850
+F 0 "#PWR0106" H 1800 2700 50  0001 C CNN
+F 1 "VCC" V 1815 2977 50  0000 L CNN
+F 2 "" H 1800 2850 50  0001 C CNN
+F 3 "" H 1800 2850 50  0001 C CNN
+	1    1800 2850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1400 3600 1850 3600
+Wire Wire Line
+	1850 3600 1850 3150
+Connection ~ 1850 2850
+Wire Wire Line
+	1850 2850 1800 2850
+Wire Wire Line
+	1400 3150 1850 3150
+Connection ~ 1850 3150
+Wire Wire Line
+	1850 3150 1850 2850
+$Comp
+L power:GND #PWR0107
+U 1 1 5F4E4389
+P 900 3150
+F 0 "#PWR0107" H 900 2900 50  0001 C CNN
+F 1 "GND" H 905 2977 50  0000 C CNN
+F 2 "" H 900 3150 50  0001 C CNN
+F 3 "" H 900 3150 50  0001 C CNN
+	1    900  3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 5F4E4707
+P 900 3600
+F 0 "#PWR0108" H 900 3350 50  0001 C CNN
+F 1 "GND" H 905 3427 50  0000 C CNN
+F 2 "" H 900 3600 50  0001 C CNN
+F 3 "" H 900 3600 50  0001 C CNN
+	1    900  3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 5500 3100 5800
+Wire Wire Line
+	1800 5500 1800 5800
+Wire Wire Line
+	3100 5800 3300 5800
+Wire Wire Line
+	1800 5800 1600 5800
+$Comp
+L power:VCC #PWR0109
+U 1 1 5F4EAD27
+P 3300 5800
+F 0 "#PWR0109" H 3300 5650 50  0001 C CNN
+F 1 "VCC" V 3315 5928 50  0000 L CNN
+F 2 "" H 3300 5800 50  0001 C CNN
+F 3 "" H 3300 5800 50  0001 C CNN
+	1    3300 5800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5F4EB568
+P 3600 5500
+F 0 "#PWR0110" H 3600 5250 50  0001 C CNN
+F 1 "GND" H 3605 5327 50  0000 C CNN
+F 2 "" H 3600 5500 50  0001 C CNN
+F 3 "" H 3600 5500 50  0001 C CNN
+	1    3600 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 5F4EB8B6
+P 1300 5500
+F 0 "#PWR0111" H 1300 5250 50  0001 C CNN
+F 1 "GND" H 1305 5327 50  0000 C CNN
+F 2 "" H 1300 5500 50  0001 C CNN
+F 3 "" H 1300 5500 50  0001 C CNN
+	1    1300 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR0112
+U 1 1 5F4ED0A1
+P 1600 5800
+F 0 "#PWR0112" H 1600 5650 50  0001 C CNN
+F 1 "+1V8" V 1615 5928 50  0000 L CNN
+F 2 "" H 1600 5800 50  0001 C CNN
+F 3 "" H 1600 5800 50  0001 C CNN
+	1    1600 5800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 5F4EDBA1
+P 1800 5900
+F 0 "#PWR0113" H 1800 5650 50  0001 C CNN
+F 1 "GND" H 1805 5727 50  0000 C CNN
+F 2 "" H 1800 5900 50  0001 C CNN
+F 3 "" H 1800 5900 50  0001 C CNN
+	1    1800 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2950 2150 3050
+Wire Wire Line
+	2150 3050 2150 3550
+Wire Wire Line
+	2150 3550 2400 3550
+Connection ~ 2150 3050
+$Comp
+L power:GND #PWR0116
+U 1 1 5F4EF880
+P 2400 3550
+F 0 "#PWR0116" H 2400 3300 50  0001 C CNN
+F 1 "GND" H 2405 3377 50  0000 C CNN
+F 2 "" H 2400 3550 50  0001 C CNN
+F 3 "" H 2400 3550 50  0001 C CNN
+	1    2400 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 3550
+Wire Wire Line
+	2400 3550 2650 3550
+$Comp
+L power:GND #PWR0117
+U 1 1 5F4F012F
+P 3150 2950
+F 0 "#PWR0117" H 3150 2700 50  0001 C CNN
+F 1 "GND" V 3155 2822 50  0000 R CNN
+F 2 "" H 3150 2950 50  0001 C CNN
+F 3 "" H 3150 2950 50  0001 C CNN
+	1    3150 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3150 3050 3400 3050
+$Comp
+L power:+5V #PWR0118
+U 1 1 5F4F0F1B
+P 3400 3050
+F 0 "#PWR0118" H 3400 2900 50  0001 C CNN
+F 1 "+5V" V 3415 3178 50  0000 L CNN
+F 2 "" H 3400 3050 50  0001 C CNN
+F 3 "" H 3400 3050 50  0001 C CNN
+	1    3400 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L SamacSys_Parts:TCR5RG18A,LF IC?
+U 1 1 614EC218
+P 3100 5800
+AR Path="/5F450D9F/614EC218" Ref="IC?"  Part="1" 
+AR Path="/5F451091/614EC218" Ref="IC1"  Part="1" 
+F 0 "IC1" H 3750 6065 50  0000 C CNN
+F 1 "TCR5RG18A,LF" H 3750 5974 50  0000 C CNN
+F 2 "TCR5RG18ALF" H 4250 5900 50  0001 L CNN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=70203&prodName=TCR5RG18A" H 4250 5800 50  0001 L CNN
+F 4 "LDO Voltage Regulators LDO REG.LOUT:500MA VOUT 1.8V" H 4250 5700 50  0001 L CNN "Description"
+F 5 "0.33" H 4250 5600 50  0001 L CNN "Height"
+F 6 "" H 4250 5500 50  0001 L CNN "Mouser Part Number"
+F 7 "" H 4250 5400 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Toshiba" H 4250 5300 50  0001 L CNN "Manufacturer_Name"
+F 9 "TCR5RG18A,LF" H 4250 5200 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3100 5800
+	-1   0    0    -1  
+$EndComp
+Connection ~ 3100 5800
+Connection ~ 1800 5800
+Wire Wire Line
+	3100 5900 3100 5800
+$EndSCHEMATC

@@ -1,0 +1,16 @@
+/ {
+	chosen {
+		zephyr,bt-uart=&uart2;
+	};
+};
+
+&uart2 {
+	compatible = "nordic,nrf-uarte";
+	current-speed = <115200>;
+	status = "okay";
+	tx-pin = <11>;
+	rx-pin = <12>;
+	rts-pin = <0xFFFFFFFF>;
+	cts-pin = <0xFFFFFFFF>;
+};
+	

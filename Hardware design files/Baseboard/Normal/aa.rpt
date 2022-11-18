@@ -1,0 +1,110 @@
+** Drc report for C:\Users\l-plu\Documents\APT-KEYVIL\Hardware Design\Baseboard\Keyvilboard2.0\Keyvilboard2.0.kicad_pcb **
+** Created on  **
+
+** Found 28 DRC errors **
+ErrType(19): Pad too close to pad
+    @(148,650 mm, 105,725 mm): Pad 13 of TXB104 on F.Cu and others
+    @(148,850 mm, 105,950 mm): Pad 1 of TXB104 on F.Cu and others
+ErrType(53): Track too close to board edge
+    @(162,030 mm, 109,330 mm): Track 0,127 mm [GND] on F.Cu, length: 0,289 mm
+ErrType(4): Track too close to pad
+    @(148,720 mm, 106,150 mm): Via 0,450 mm [+3V3] on F.Cu - B.Cu
+    @(148,650 mm, 105,725 mm): Pad 13 of TXB104 on F.Cu and others
+ErrType(53): Track too close to board edge
+    @(146,790 mm, 109,330 mm): Track 0,127 mm [+3V3] on F.Cu, length: 1,000 mm
+ErrType(53): Track too close to board edge
+    @(145,520 mm, 109,330 mm): Track 0,127 mm [VCC] on PWR, length: 0,960 mm
+ErrType(53): Track too close to board edge
+    @(155,680 mm, 109,330 mm): Track 0,127 mm [MCLR] on B.Cu, length: 0,635 mm
+ErrType(53): Track too close to board edge
+    @(153,140 mm, 109,330 mm): Track 0,127 mm [RXUSBH-PGRDATA] on F.Cu, length: 0,740 mm
+ErrType(53): Track too close to board edge
+    @(154,410 mm, 109,330 mm): Track 0,127 mm [TXUSBH-PGRCLK] on F.Cu, length: 0,953 mm
+ErrType(53): Track too close to board edge
+    @(151,870 mm, 109,330 mm): Track 0,127 mm [RST] on F.Cu, length: 2,482 mm
+ErrType(53): Track too close to board edge
+    @(150,600 mm, 109,330 mm): Track 0,127 mm [MISO] on F.Cu, length: 0,085 mm
+ErrType(53): Track too close to board edge
+    @(150,540 mm, 109,330 mm): Track 0,127 mm [MISO] on F.Cu, length: 1,050 mm
+ErrType(53): Track too close to board edge
+    @(149,330 mm, 109,330 mm): Track 0,127 mm [MOSI] on F.Cu, length: 0,071 mm
+ErrType(53): Track too close to board edge
+    @(149,280 mm, 109,330 mm): Track 0,127 mm [MOSI] on F.Cu, length: 1,100 mm
+ErrType(53): Track too close to board edge
+    @(148,060 mm, 109,330 mm): Track 0,127 mm [SCLK] on F.Cu, length: 0,339 mm
+ErrType(45): Courtyards overlap
+    @(165,000 mm, 94,560 mm): Footprint TX1 on F.Cu
+    @(166,600 mm, 100,570 mm): Footprint USBFEMALE1 on F.Cu
+ErrType(45): Courtyards overlap
+    @(165,060 mm, 106,460 mm): Footprint RX1 on F.Cu
+    @(166,600 mm, 100,570 mm): Footprint USBFEMALE1 on F.Cu
+ErrType(45): Courtyards overlap
+    @(149,650 mm, 105,300 mm): Footprint TXB104 on F.Cu
+    @(147,880 mm, 105,285 mm): Footprint 1uF5 on F.Cu
+ErrType(45): Courtyards overlap
+    @(149,650 mm, 105,300 mm): Footprint TXB104 on F.Cu
+    @(151,430 mm, 105,275 mm): Footprint 1uF4 on F.Cu
+ErrType(45): Courtyards overlap
+    @(148,080 mm, 102,980 mm): Footprint 1uF1 on F.Cu
+    @(148,380 mm, 98,570 mm): Footprint IC1 on F.Cu
+ErrType(45): Courtyards overlap
+    @(166,600 mm, 100,570 mm): Footprint USBFEMALE1 on F.Cu
+    @(159,500 mm, 102,870 mm): Footprint IC2 on F.Cu
+ErrType(45): Courtyards overlap
+    @(166,600 mm, 100,570 mm): Footprint USBFEMALE1 on F.Cu
+    @(163,640 mm, 103,810 mm): Footprint 10uF1 on F.Cu
+ErrType(45): Courtyards overlap
+    @(166,600 mm, 100,570 mm): Footprint USBFEMALE1 on F.Cu
+    @(163,510 mm, 101,180 mm): Footprint 0.1uF3 on F.Cu
+ErrType(45): Courtyards overlap
+    @(143,280 mm, 104,020 mm): Footprint PS1 on F.Cu
+    @(142,510 mm, 105,550 mm): Footprint 1uF3 on F.Cu
+ErrType(45): Courtyards overlap
+    @(143,280 mm, 104,020 mm): Footprint PS1 on F.Cu
+    @(143,990 mm, 105,550 mm): Footprint 1uF2 on F.Cu
+ErrType(45): Courtyards overlap
+    @(159,500 mm, 102,870 mm): Footprint IC2 on F.Cu
+    @(154,535 mm, 104,840 mm): Footprint 16Mhz2 on F.Cu
+ErrType(45): Courtyards overlap
+    @(159,500 mm, 102,870 mm): Footprint IC2 on F.Cu
+    @(154,545 mm, 99,130 mm): Footprint 16Mhz1 on F.Cu
+ErrType(45): Courtyards overlap
+    @(148,380 mm, 98,570 mm): Footprint IC1 on F.Cu
+    @(154,535 mm, 104,840 mm): Footprint 16Mhz2 on F.Cu
+ErrType(45): Courtyards overlap
+    @(148,380 mm, 98,570 mm): Footprint IC1 on F.Cu
+    @(154,545 mm, 99,130 mm): Footprint 16Mhz1 on F.Cu
+
+** Found 10 unconnected pads **
+ErrType(2): Unconnected items
+    @(155,480 mm, 94,965 mm): Pad 2 of U1 on F.Cu
+    @(155,480 mm, 94,965 mm): Pad 2 of U1 on F.Mask
+ErrType(2): Unconnected items
+    @(155,480 mm, 94,965 mm): Pad 2 of U1 on F.Mask
+    @(155,480 mm, 94,965 mm): Pad 2 of U1 on F.Paste
+ErrType(2): Unconnected items
+    @(154,890 mm, 95,290 mm): Pad 5 of U1 on F.Cu
+    @(154,890 mm, 95,290 mm): Pad 5 of U1 on F.Paste
+ErrType(2): Unconnected items
+    @(154,890 mm, 95,290 mm): Pad 5 of U1 on F.Paste
+    @(154,890 mm, 95,290 mm): Pad 5 of U1 on F.Mask
+ErrType(2): Unconnected items
+    @(155,480 mm, 95,615 mm): Pad 1 of U1 on F.Cu
+    @(155,480 mm, 95,615 mm): Pad 1 of U1 on F.Mask
+ErrType(2): Unconnected items
+    @(155,480 mm, 95,615 mm): Pad 1 of U1 on F.Mask
+    @(155,480 mm, 95,615 mm): Pad 1 of U1 on F.Paste
+ErrType(2): Unconnected items
+    @(154,310 mm, 94,965 mm): Track 0,127 mm [VCC] on F.Cu, length: 0,650 mm
+    @(154,310 mm, 94,965 mm): Pad 3 of U1 on F.Paste
+ErrType(2): Unconnected items
+    @(154,310 mm, 94,965 mm): Pad 3 of U1 on F.Paste
+    @(154,310 mm, 94,965 mm): Pad 3 of U1 on F.Mask
+ErrType(2): Unconnected items
+    @(154,310 mm, 95,615 mm): Track 0,127 mm [VCC] on F.Cu, length: 0,445 mm
+    @(154,310 mm, 95,615 mm): Pad 4 of U1 on F.Mask
+ErrType(2): Unconnected items
+    @(154,310 mm, 95,615 mm): Pad 4 of U1 on F.Mask
+    @(154,310 mm, 95,615 mm): Pad 4 of U1 on F.Paste
+
+** End of Report **
