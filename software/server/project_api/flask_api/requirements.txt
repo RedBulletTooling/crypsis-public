@@ -1,0 +1,7 @@
+paho-mqtt
+flask
+django
+mariadb
+urllib3
+flask-cors
+Flask-Limiter

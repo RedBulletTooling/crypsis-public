@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon2.ico" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  
+  
+  
+</head>
+<body>
+  <section class="menu menu1 cid-sgjO2Gzhaa" once="menu" id="menu1-0">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/favicon.ico" alt="Mobirise" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="index.html">Menura | Crypsis C2</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">
+                            Dashboard</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="implants.html">Implants</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="status.html">Status</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">About</a><div class="dropdown-menu"><a class="text-black text-primary dropdown-item display-4" href="info.html">Info</a><a class="text-black text-primary dropdown-item display-4" href="help.html" aria-expanded="false">Help<br></a></div></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+<section class="content5 cid-dashboven" id="content5-a">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-12">
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5">
+                    Dashboard
+                </h4>
+                <p class="mbr-text mbr-fonts-style display-7">
+                    This is the Menura | Crypsis C2 dashboard. Please select an implant to view the raw data and control it.</p>
+                    <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <select class="form-control" id="drop" style="width:100%;" onchange="filter(this);">
+                                <option>--- Select ---</option>
+                            </select>
+                          </div>
+                          <div class="col text-right">
+                            <button type="button" class="btn btn-outline-primary" data-target="#refresh">Refresh data</button>
+                          </div>
+                        </div>
+                    <p id="msgs"></p>
+                    <table
+                    data-toggle="table"
+                    data-url="/api/get/config"
+                    data-pagination="true"
+                    class="table table-bordered table-striped"
+                    id="table">
+                    <thead>
+                      <tr>
+                        <th data-field="Implant Project" data-filter-control="select">Implant Project</th>
+                        <th data-field="Implant ID">Implant ID</th>
+                        <th data-field="Implant Location" data-filter-control="select">Implant Location</th>
+                        <th data-field="DNS" data-filter-control="select">DNS</th>
+                        <th data-field="Workhours (UTC)">Workhours (UTC)</th>
+                        <th data-field="edit" data-formatter="edit">Actions</th>
+                      </tr>
+                    </thead>
+                  </table>
+                  <script>
+                    function edit(value) {
+                        return '<button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#rawdata">Download raw data</button><button type="button" class="btn btn-outline-dark btn-sm" data-toggle="modal" data-target="#commands">Commands</button>';
+                    }
+                </script>
+            </div>
+            <div class="modal fade" id="rawdata" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Download raw data</h4>
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="">×</span><span class="sr-only">Close</span></button>
+                        </div>
+                        <div class="modal-body4"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-outline-primary">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="commands" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="myModalLabel">Send commands</h4>
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="">×</span><span class="sr-only">Close</span></button>
+                        </div>
+                        <div class="modal-body5"></div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contacts1 cid-dashonder" id="dashboard">
+    <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <table
+            data-toggle="table"
+            data-url="/api/data?amount=500"
+            data-pagination="true"
+            data-search="true"
+            class="table table-bordered table-striped herres"
+            id="table2"
+            data-sort-name="value_timestamp"
+            data-sort-order="desc"
+            data-escape="true">
+            <thead>
+              <tr>
+                <th data-field="value_timestamp" data-sortable="true">value_timestamp</th>
+                <th data-field="value">value</th>
+                <th data-field="topic_id">topic_id</th>
+              </tr>
+            </thead>
+          </table>
+          </div>
+          <div class="col">
+            <table
+            data-toggle="table"
+            data-url="/api/topics"
+            data-pagination="true"
+            data-search="true"
+            class="table table-bordered table-striped"
+            id="table3"
+            data-sort-name="topic_id"
+            data-sort-order="asc">
+            <thead>
+              <tr>
+                <th data-field="topic_id" data-sortable="true">topic_id</th>
+                <th data-field="topic">topic</th>
+              </tr>
+            </thead>
+          </table>
+          </div>
+        </div>    
+</section>
+<section class="footer7 cid-sgjPtX6q6x" once="footers" id="footer7-3">
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2021 Red Bullet Tooling BV - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section><section style="background-color: #fff;"><a href="https://mobirise.site"></a></section><script src="assets/web/assets/jquery/jquery.min.js"></script>  <script src="assets/popper/popper.min.js"></script>  <script src="assets/tether/tether.min.js"></script>  <script src="assets/bootstrap/js/bootstrap.min.js"></script>  <script src="assets/smoothscroll/smooth-scroll.js"></script>  <script src="assets/dropdown/js/nav-dropdown.js"></script>  <script src="assets/dropdown/js/navbar-dropdown.js"></script>  <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>  <script src="assets/theme/js/script.js"></script>  
+<script>
+    var $table = $('#table');
+    $table.on('load-success.bs.table', function(e, data){          
+      $.getScript("assets/theme/js/modal.js");
+      $.getScript("assets/theme/js/modalupdate.js");
+    });
+    $table.on('all.bs.table', function(e, data){          
+      $.getScript("assets/theme/js/modalupdate.js");
+    });
+</script>
+<script>
+    $(".btn[data-target='#refresh']").click(function() {
+        $('#table2').bootstrapTable('refresh', {silent: true});
+        $('#table3').bootstrapTable('refresh', {silent: true});
+        $.notify({
+        title: '<strong>Refreshing table data...</strong>',
+        message: ''
+        },{
+            type: 'success',
+            delay: 100
+        });
+    })
+</script>
+<script>
+
+</script>
+<script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap-notify.min.js"></script>
+<script>
+    function filter() {
+        var ele = document.getElementById('drop');
+        var str = ele.options[ele.selectedIndex].text;
+        var res = str.split(" - ");
+        //alert(res[0]);
+        var $table = $('#table')
+        var $table2 = $('#table2')
+        var $table3 = $('#table3')
+        if (res == "--- Select ---") {
+            $table.bootstrapTable('filterBy', {})
+            $table2.bootstrapTable('filterBy', {})
+            $table3.bootstrapTable('filterBy', {})
+        } else{
+            $.getJSON('/api/get/topics_implant?project=' + res[0] + '&implant_id=' + res[1], function (data) {
+                topic_ids = Object.keys(data)
+                var herres = [];
+                for (var i = 0; i < topic_ids.length; i++) {
+                    herres[i] = parseInt(topic_ids[i])
+                }
+                $table3.bootstrapTable('filterBy', {
+                    "topic_id": herres
+                })
+                $table2.bootstrapTable('filterBy', {
+                    "topic_id": herres
+                })
+            })
+            $table.bootstrapTable('filterBy', {
+                "Implant ID": res[1]
+            })
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon2.ico" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <title>Implants</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.18.0/dist/bootstrap-table.min.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap-select-country@4.0.0/dist/css/bootstrap-select-country.min.css" type="text/css"/>
+  
+</head>
+<body>
+  
+  <section class="menu menu1 cid-sgjO2Gzhaa" once="menu" id="menu1-2">
+    
+
+    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+            <div class="navbar-brand">
+                <span class="navbar-logo">
+                    <a href="index.html">
+                        <img src="assets/images/favicon.ico" alt="Mobirise" style="height: 3rem;">
+                    </a>
+                </span>
+                <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-7" href="index.html">Menura | Crypsis C2</a></span>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true"><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="index.html">
+                            Dashboard</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="implants.html">Implants</a></li><li class="nav-item"><a class="nav-link link text-black text-primary display-4" href="status.html">Status</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-black text-primary dropdown-toggle display-4" href="#" data-toggle="dropdown-submenu" aria-expanded="false">About</a><div class="dropdown-menu"><a class="text-black text-primary dropdown-item display-4" href="info.html">Info</a><a class="text-black text-primary dropdown-item display-4" href="help.html" aria-expanded="false">Help<br></a></div></li></ul>
+                
+                
+            </div>
+        </div>
+    </nav>
+</section>
+
+<section class="content5 cid-sgjQyIcNye" id="content5-a">
+    <div class="container">
+        <button type="button" class="btn btn-outline-success btn-sm float-right" data-toggle="modal" data-target="#createmodal">Add new implant</button>
+        <table
+        data-toggle="table"
+        data-url="/api/get/config"
+        data-pagination="true"
+        data-search="true"
+        class="table table-bordered table-striped"
+        id="table">
+        <thead>
+          <tr>
+            <th data-field="Implant Project">Implant Project</th>
+            <th data-sortable="true" data-field="Implant ID">Implant ID</th>
+            <th data-field="Implant Location">Implant Location</th>
+            <th data-field="DNS">DNS</th>
+            <th data-field="Workhours (UTC)">Workhours (UTC)</th>
+            <th data-field="Username">Username</th>
+            <th data-field="Password">Password</th>
+            <th data-field="edit" data-formatter="edit">Actions</th>
+          </tr>
+        </thead>
+      </table>
+        <script>
+            function edit(value) {
+                return '<button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#myModal">Edit</button><button type="button" class="btn btn-outline-danger btn-sm" data-toggle="modal" data-target="#deletemodal">Delete</button>';
+            }
+        </script>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Edit</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="">×</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="deletemodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Delete</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body2">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-danger">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="modal fade" id="createmodal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Delete</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body3">
+                <div id="modalContent">
+                    <form role="form" name="modalForm3" action="/api/create/config" method="post">
+                        <div class="form-group"><label for="Implant Project">Implant Project</label><input class="form-control" name="Implant Project" id="Implant Project"></div>
+                        <div class="form-group"><label for="Implant ID">Implant ID</label><input class="form-control" name="Implant ID" id="Implant ID"></div>
+                        <div class="form-group"><label for="Implant Location">Implant Location</label><select class="form-control selectpicker countrypicker" data-flag="true" data-live-search="true" name="Implant Location" id="Implant Location"></select></div>
+                        <div class="form-group"><label for="DNS">DNS</label><input class="form-control" name="DNS" id="DNS"></div>
+                        <div class="form-group"><label for="Workhours (UTC)">Workhours (UTC)</label><input class="form-control" name="Workhours (UTC)" id="Workhours (UTC)"></div>
+                        <div class="form-group"><label for="Username">Username</label><input class="form-control" name="Username" id="Username"></div>
+                        <div class="form-group"><label for="Password">Password</label><input class="form-control" name="Password" id="Password"></div>
+                    </form><b>Are you sure you want to create this implant?</b>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-outline-success">Create</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</section>
+<section class="footer7 cid-sgjPtX6q6x" once="footers" id="footer7-3">
+
+    <div class="container">
+        <div class="media-container-row align-center mbr-white">
+            <div class="col-12">
+                <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                    © Copyright 2021 Red Bullet Tooling BV - All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="assets/web/assets/jquery/jquery.min.js"></script>
+<section style="background-color: #fff;"><a href="https://mobirise.site"></a></section>
+<script src="assets/popper/popper.min.js"></script>
+<script src="assets/tether/tether.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/smoothscroll/smooth-scroll.js"></script>
+<script src="assets/dropdown/js/nav-dropdown.js"></script>
+<script src="assets/dropdown/js/navbar-dropdown.js"></script>
+<script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+<script src="assets/theme/js/script.js"></script>
+<script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
+
+<script src="https://unpkg.com/bootstrap-select-country@4.0.0/dist/js/bootstrap-select-country.min.js"></script>
+<script>
+  $('.countrypicker').countrypicker();
+</script>
+<script>
+    var $table = $('#table');
+    $table.on('load-success.bs.table', function(e, data){          
+      $.getScript("assets/theme/js/modal.js");
+    });
+</script>
+</body>
+</html>

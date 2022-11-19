@@ -1,0 +1,66 @@
+version: '3'
+    
+services:
+  nginxredirect:
+    image: geldim/https-redirect
+    restart: unless-stopped
+    ports:
+      - 80:80
+  mysql:
+    image: mariadb
+    volumes:
+      - mariadb:/var/lib/mysql
+      - ./create.sql:/docker-entrypoint-initdb.d/create.sql
+    restart: unless-stopped
+    env_file: global.env
+  mqtt:
+    image: eclipse-mosquitto
+    ports:
+      - 8883:8883
+    volumes:
+      - mosquitto-data:/mosquitto/data
+      - mosquitto-logs:/mosquitto/logs
+      - mosquitto-conf:/mosquitto/config
+    restart: unless-stopped
+  app:
+    build: ./project_mqtt2mysql/.
+    image: mqtt2mysqlcustom:compose
+    restart: unless-stopped
+    env_file: global.env
+    links:
+      - mqtt
+      - mysql
+    depends_on:
+      - mqtt
+      - mysql
+  api:
+    build: ./project_api/.
+    image: flask_api:compose
+    restart: unless-stopped
+    volumes:
+      - ./project_api/flask_api/data.json:/flask_api/data.json
+    ports:
+      - 8443:8443
+    env_file: global.env
+    links:
+      - mqtt
+      - mysql
+    depends_on:
+      - mqtt
+      - mysql
+  webserver:
+    build: ./project_webserver/.
+    image: webserver:compose
+    restart: unless-stopped
+    links:
+      - api
+    depends_on:
+      - api
+    ports:
+      - 443:443
+
+volumes:
+  mosquitto-data:
+  mosquitto-logs:
+  mosquitto-conf:
+  mariadb:
