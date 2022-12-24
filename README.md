@@ -35,4 +35,4 @@ Embedded
 
 The code was still heavily under development and under testing (alpha), before deciding to stall the project. There are serious security issues present in this repository. Think, weak default passwords or injection vulnerabilities. Expect potential issues / conflicts.
 
-MIT license applies.
+Apache2 license applies.
